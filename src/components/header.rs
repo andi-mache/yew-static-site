@@ -53,7 +53,7 @@ pub fn header() -> Html {
             "w-[50vw]",
             "h-screen",
             "bg-white",
-            "dark:bg-zinc-900",
+            "dark:bg-red-900",
             "transition-all",
             "translate-x-full",
         ]
@@ -106,12 +106,12 @@ pub fn header() -> Html {
     html! {
         <header class="z-10 px-8 fixed top-0 w-full h-20 bg-white dark:bg-zinc-900 drop-shadow-lg font-head uppercase">
             <div class="flex h-full items-center">
-                <div class="w-full flex text-3xl font-bold">
-                    <Link<Route> to={Route::Home}>{"Blog"}</Link<Route>>
+                <div class="w-full flex rounded-lg text-3xl font-bold animate-bounce hover:animate-spin  hover:bg-gradient-to-r from-purple-500 to-pink-500 ">
+                    <Link<Route> to={Route::Home}>{"Byte-Sized Circuits"}</Link<Route>>
                 </div>
                 <nav class="hidden md:block">
-                    <ul class="md:flex md:justify-center md:items-center">
-                        { for nav_links.iter().map(|item| { html! {<li><Link<Route> classes="p-4 text-lg" to={item.route.clone()}>{item.name.clone()}</Link<Route>></li>} })}
+                    <ul class="md:flex md:justify-center md:items-center ">
+                        { for nav_links.iter().map(|item| { html! {<li><Link<Route> classes="p-4 rounded-lg text-lg" to={item.route.clone()}>{item.name.clone()}</Link<Route>></li>} })}
                     </ul>
                 </nav>
                 <ul class="w-full flex justify-end items-center">

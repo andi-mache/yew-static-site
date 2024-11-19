@@ -1,9 +1,26 @@
 [build]
 target = "index.html"
 dist = "dist"
+release = "false"
+public_url= "yew-static-site-generator"
+
+[watch]
+watch = [
+  "./index.html",
+  "src/",
+  "styles",
+  "images"
+]
+
+[clean]
+dist= "dist"
+
 
 [[hooks]]
-stage = "build"
+stage = "pre_build"
 command = "sh"
-command_arguments = ["-c", "npx tailwindcss -i styles/input.css -o styles/output.css"]
-
+# run tailwind build with webpack
+command_arguments = [
+    "-c",
+    "[ ! -d \"./node_modules\" ] && npm i || :; npm run build_css",
+]
