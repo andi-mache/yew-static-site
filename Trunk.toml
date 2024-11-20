@@ -1,19 +1,16 @@
 [build]
 target = "index.html"
 dist = "dist"
-release = false
 public_url= "/yew-static-site/"
 
 [watch]
 watch = [
   "./index.html",
   "src/",
-  "styles",
-  "images"
+  "styles/",
+  "images/"
 ]
 
-[clean]
-dist= "dist"
 
 
 [[hooks]]
