@@ -20,7 +20,7 @@
     @apply font-semibold;
     @apply font-head;
     @apply uppercase;
-    @apply text-red-500;
+    @apply text-blue-500;
     @apply my-6;
   }
   h3 {
