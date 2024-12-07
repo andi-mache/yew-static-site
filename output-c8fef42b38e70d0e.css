@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -579,7 +579,7 @@ h2 {
   font-family: Lato;
   text-transform: uppercase;
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -750,8 +750,8 @@ article blockquote p {
   height: 5rem;
 }
 
-.h-64 {
-  height: 16rem;
+.h-72 {
+  height: 18rem;
 }
 
 .h-full {
